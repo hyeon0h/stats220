@@ -5,7 +5,6 @@
 
 
 ## _My Code_
-#### R Code 
 ```r
 
 library(magick)

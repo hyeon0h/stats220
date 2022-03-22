@@ -67,7 +67,7 @@ image_write(final_meme, "my_meme.png")
 
 ### _Some Informations About My Meme_
 
-* **What it is about**;
+* **What it is about;**
  This meme is about what I expected uni life would be like vs what my actual uni life is like.
 
 * **how is it original**

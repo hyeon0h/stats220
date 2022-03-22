@@ -64,7 +64,7 @@ final_meme <- c(expactation_vector, reality_vector) %>% image_append(stack = TRU
 image_write(final_meme, "my_meme.png")
 ```
 
-## _Some Informations About My Meme_
+## _Some Information About My Meme_
 
 ### What it is about
 This meme is about what I expected uni life would be like vs what my actual uni life is like.

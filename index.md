@@ -2,10 +2,10 @@
 
 ## Some Informations About My Meme
 
-* **What it is about
+* **What it is about**
 This meme is about what I expected uni life would be like vs what my actual uni life is like.
 
-* **how is it original
+* **how is it original**
 
 * **Images source**
 All the images I used are from [this website](https://pixabay.com).
@@ -13,7 +13,7 @@ All the images I used are from [this website](https://pixabay.com).
 
 
 ### My Meme
-!(my_meme.png)
+![mymeme](my_meme.png)
 
 ### My Code
 #### R Code 

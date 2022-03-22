@@ -70,7 +70,6 @@ image_write(final_meme, "my_meme.png")
 ### What it is about
 This meme is about what I expected uni life would be like vs what my actual uni life is like.
 
-### how is it original
 
 ### Images source
 All the images I used are from [pixabay](https://pixabay.com).

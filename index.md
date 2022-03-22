@@ -1,29 +1,10 @@
 # Assignment 1 
 
-## Some Informations About My Meme
-
-* **What it is about**
-This meme is about what I expected uni life would be like vs what my actual uni life is like.
-
-* **how is it original**
-
-* **Images source**
-All the images I used are from [pixabay](https://pixabay.com).
-	+ image 1![image1](https://cdn.pixabay.com/photo/2021/02/18/12/03/people-6027028_1280.jpg)
-	+ image 2![image2](https://cdn.pixabay.com/photo/2016/05/18/11/25/library-1400313_1280.jpg)
-	+ image 3![image3](https://cdn.pixabay.com/photo/2019/02/10/09/21/lecture-3986809_1280.jpg)
-	+ image 4![image4](https://cdn.pixabay.com/photo/2018/05/18/16/41/globe-3411506_1280.jpg)
-	+ image 5![image5](https://cdn.pixabay.com/photo/2013/02/21/19/00/depression-84404_1280.jpg)
-	+ image 6![image6](https://cdn.pixabay.com/photo/2022/01/22/03/59/student-6956172_1280.jpg)
-	+ image 7![image7](https://cdn.pixabay.com/photo/2020/03/21/18/04/hand-disinfection-4954816_1280.jpg)
-	+ image 8![image8](https://cdn.pixabay.com/photo/2020/05/04/19/21/lockdown-5130295_1280.jpg)
-
-
-### _My Meme_
+## _My Meme_
 ![mymeme](my_meme.png)
 
 
-### _My Code_
+## _My Code_
 #### R Code 
 ```r
 
@@ -83,3 +64,22 @@ final_meme <- c(expactation_vector, reality_vector) %>% image_append(stack = TRU
 # saving it as an image file
 image_write(final_meme, "my_meme.png")
 ```
+
+### _Some Informations About My Meme_
+
+* **What it is about**
+This meme is about what I expected uni life would be like vs what my actual uni life is like.
+
+* **how is it original**
+
+* **Images source**
+All the images I used are from [pixabay](https://pixabay.com).
+	+ image 1![image1](https://cdn.pixabay.com/photo/2021/02/18/12/03/people-6027028_1280.jpg)
+	+ image 2![image2](https://cdn.pixabay.com/photo/2016/05/18/11/25/library-1400313_1280.jpg)
+	+ image 3![image3](https://cdn.pixabay.com/photo/2019/02/10/09/21/lecture-3986809_1280.jpg)
+	+ image 4![image4](https://cdn.pixabay.com/photo/2018/05/18/16/41/globe-3411506_1280.jpg)
+	+ image 5![image5](https://cdn.pixabay.com/photo/2013/02/21/19/00/depression-84404_1280.jpg)
+	+ image 6![image6](https://cdn.pixabay.com/photo/2022/01/22/03/59/student-6956172_1280.jpg)
+	+ image 7![image7](https://cdn.pixabay.com/photo/2020/03/21/18/04/hand-disinfection-4954816_1280.jpg)
+	+ image 8![image8](https://cdn.pixabay.com/photo/2020/05/04/19/21/lockdown-5130295_1280.jpg)
+

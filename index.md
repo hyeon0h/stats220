@@ -9,14 +9,14 @@ This meme is about what I expected uni life would be like vs what my actual uni 
 
 * **Images source**
 All the images I used are from [pixabay](https://pixabay.com).
-	+ image1[image1](https://cdn.pixabay.com/photo/2021/02/18/12/03/people-6027028_1280.jpg)
-	+ image2[image2](https://cdn.pixabay.com/photo/2016/05/18/11/25/library-1400313_1280.jpg)
-	+ image3[image3](https://cdn.pixabay.com/photo/2019/02/10/09/21/lecture-3986809_1280.jpg)
-	+ image4[image4](https://cdn.pixabay.com/photo/2018/05/18/16/41/globe-3411506_1280.jpg)
-	+ image5[image5](https://cdn.pixabay.com/photo/2013/02/21/19/00/depression-84404_1280.jpg)
-	+ image6[image6](https://cdn.pixabay.com/photo/2022/01/22/03/59/student-6956172_1280.jpg)
-	+ image7[image7](https://cdn.pixabay.com/photo/2020/03/21/18/04/hand-disinfection-4954816_1280.jpg)
-	+ image8[image8](https://cdn.pixabay.com/photo/2020/05/04/19/21/lockdown-5130295_1280.jpg)
+	+ image1! [image1](https://cdn.pixabay.com/photo/2021/02/18/12/03/people-6027028_1280.jpg)
+	+ image2![image2](https://cdn.pixabay.com/photo/2016/05/18/11/25/library-1400313_1280.jpg)
+	+ image3![image3](https://cdn.pixabay.com/photo/2019/02/10/09/21/lecture-3986809_1280.jpg)
+	+ image4![image4](https://cdn.pixabay.com/photo/2018/05/18/16/41/globe-3411506_1280.jpg)
+	+ image5![image5](https://cdn.pixabay.com/photo/2013/02/21/19/00/depression-84404_1280.jpg)
+	+ image6![image6](https://cdn.pixabay.com/photo/2022/01/22/03/59/student-6956172_1280.jpg)
+	+ image7![image7](https://cdn.pixabay.com/photo/2020/03/21/18/04/hand-disinfection-4954816_1280.jpg)
+	+ image8![image8](https://cdn.pixabay.com/photo/2020/05/04/19/21/lockdown-5130295_1280.jpg)
 
 
 ### _My Meme_

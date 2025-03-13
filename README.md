@@ -9,7 +9,7 @@ This is my repo for [***STATS 220***](https://courseoutline.auckland.ac.nz/dco/c
 * I am undertaking a degree in **Statistics**.
 * I am taking _STATS 220_ because:
   1. I want to learn more about **data technologies**.
-  2. I want to be learn about **R**.
+  2. I want to learn about **R**.
 * I am interested in learning about data analysis using **R**.
   
 

@@ -159,8 +159,6 @@ comment1 <- paste("On average, respondents listen to music for", avg_hours, "hou
 comment2 <- paste0("The most common device used to listen to music is ", most_used_device, ".")
 comment3 <- paste0("The genre that was mentioned the most is ", most_mentioned, ", indicating it is the most popular genre overall.")
 comment4 <- paste0("For the single favorite genre question, the most frequently chosen one was ", most_freq_favavourite, ".")
-
-
 ```
 
 

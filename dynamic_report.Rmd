@@ -1,1 +1,167 @@
+---
+title: My dynamic report
+output: html_fragment
+---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+library(tidyverse)
+```
+
+
+```{css}
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@1,800&display=swap');
+
+
+h2 {
+  color: #5351B8;
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+}
+
+h3 {
+  color: #4B558D;
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+}
+
+body {
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+```
+
+
+
+## Music Listening Trends
+
+ This report shows insights into people's music listening habits based on the responses to my survey.
+
+ 
+ The main things I focused on are:
+
+- **What people are doing when listening to music**
+- **What genre they are listening to**
+- **Impact of music on productivity**
+
+## Bar Charts
+
+```{r data}
+# Read data directly from the URL into logged_data
+logged_data <- 
+  read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vS4TrCuEYzZOF2AOezbqeyKbJcDjsV_UYuGDRWR3HNTqFwZqzqgcmnHjwtbA-QPAQmKVsq-RXhsLfDV/pub?gid=769878342&single=true&output=csv")
+
+
+# Rename the variables in logged_data and create latest_data
+latest_data <- logged_data %>%
+  rename(
+    activity = 2,
+    device = 3,
+    mood = 4,
+    productivity = 5,
+    genre = 6,
+    hours = 7,
+  ) %>%
+  select(activity, device, mood, productivity, genre, hours) %>%
+  mutate(
+    hours = as.numeric(hours), 
+    productivity = as.numeric(productivity),
+    genre = str_trim(genre)
+  ) 
+```
+
+
+
+### 1. Most Common Activities While Listening to Music
+
+```{r barchart1}
+# Count occurrences of each activity
+activity_counts <- latest_data %>%
+  count(activity) %>%
+  arrange(desc(n))
+
+# Bar chart: activities
+ggplot(activity_counts, aes(x = reorder(activity, -n), y = n)) +
+  geom_bar(stat = "identity", fill = "#8895CE") +
+  labs(
+    x = "Activity",
+    y = "Count"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+
+### 2. Most Commonly Listened Music Genres During the Activity
+
+```{r barchart2}
+# Bar chart: Music Genres
+genre_counts <- latest_data %>%
+  count(genre) %>%
+  arrange(desc(n))
+
+ggplot(genre_counts, aes(x = reorder(genre, -n), y = n)) +
+  geom_bar(stat = "identity", fill = "#707BAE") +
+  labs(
+    x = "Genre",
+    y = "Count"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+
+### 3. Impact of Music on Productivity
+
+```{r barchart3}
+# Bar chart: Productivity impact of music
+ggplot(latest_data, aes(x = productivity)) +
+  geom_bar(fill = "#9170B0") +
+  labs(
+    x = "Productivity Score (1-10)",
+    y = "Count"
+  ) +
+  theme_minimal()
+
+```
+
+
+
+## Summary Values
+
+```{r summaries}
+# Most common activity
+most_common_activity <- names(which.max(table(latest_data$activity)))
+# Most common genre
+most_common_genre <- names(which.max(table(latest_data$genre)))
+# Most common device
+most_used_device <- latest_data %>% count(device, sort = TRUE) %>% slice(1) %>% pull(device)
+# average productivity
+avg_productivity <- round(mean(latest_data$productivity), 1)
+# average hours
+avg_hours <- round(mean(latest_data$hours, na.rm = TRUE), 1)
+
+# Dynamic Comments
+comment1 <- paste0("The most frequent activity while listening to music is ", most_common_activity, ".")
+comment2 <- paste0("The genre that was mentioned the most is ", most_common_genre, ".")
+comment3 <- paste0("The average score respondents gave on how music helps their productivity is ", avg_productivity, ".")
+comment4 <- paste("On average, respondents listen to music for", avg_hours, "hours per day, and the most common device used to listen to music is", most_used_device, ".")
+```
+
+
+- I collected responses from `r nrow(latest_data)` participants.
+- `r comment1`
+- `r comment2`
+- `r comment3`
+- `r comment4`

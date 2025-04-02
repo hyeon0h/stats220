@@ -72,7 +72,6 @@ latest_data <- logged_data %>%
     hours = 7,
   ) %>%
   select(activity, genre, mood, productivity, device, hours) 
-latest_data
 ```
 
 

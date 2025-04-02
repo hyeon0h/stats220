@@ -53,33 +53,30 @@ body {
 - **What genre they are listening to**
 - **Impact of music on productivity**
 
-## Bar Charts
+
 
 ```{r data}
 # Read data directly from the URL into logged_data
 logged_data <- 
-  read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vS4TrCuEYzZOF2AOezbqeyKbJcDjsV_UYuGDRWR3HNTqFwZqzqgcmnHjwtbA-QPAQmKVsq-RXhsLfDV/pub?gid=769878342&single=true&output=csv")
+  read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTZo3MZYeuFlH1P7LbRwDMO-ZsiqvvOKQAxpHsQDlcLEzSFPJne-v1FoHd_sZ-AnDP98sPSVrWT_5rN/pub?gid=1829976472&single=true&output=csv")
 
 
 # Rename the variables in logged_data and create latest_data
 latest_data <- logged_data %>%
   rename(
     activity = 2,
-    device = 3,
+    genre = 3,
     mood = 4,
     productivity = 5,
-    genre = 6,
+    device = 6,
     hours = 7,
   ) %>%
-  select(activity, device, mood, productivity, genre, hours) %>%
-  mutate(
-    hours = as.numeric(hours), 
-    productivity = as.numeric(productivity),
-    genre = str_trim(genre)
-  ) 
+  select(activity, genre, mood, productivity, device, hours) 
+latest_data
 ```
 
 
+## Bar Charts
 
 ### 1. Most Common Activities While Listening to Music
 
